@@ -1,0 +1,128 @@
+Absolute and Xpath:
+
+/html/body/div[1]/div/div[3]/div[2]/div[2]/form/div[2]/input --- Absolute Xpath
+//*[@id="txtUsername"] --- Relative Xpath
+
+
+------------------------------------------------------------------------------------
+<input name="txtUsername" id="txtUsername" type="text">  ----- Object property / Attributes
+
+
+//input[@name="txtUsername"]
+
+//*[@id="txtUsername"]
+
+-------------------------------------------------------------------------------------------
+
+And/OR 
+
+
+<input type="submit" name="Submit" class="button" id="btnLogin" value="LOGIN">
+<input type="submit" name="Submit" class="button" id="btnLogin" value="RESET">
+
+
+//input[@class="button" and @value="LOGIN"]
+
+//input[@class="button" or @value="LOGIN"]
+
+--------------------------------------------------------------------------------------------------
+
+Text() -- When the webelement is static we can use text()
+
+"//*[text()='Nationalities']
+
+//b[text()='Admin']
+
+---------------------------------------------------------------------------------------------------
+Contains text()
+
+MyInbox  ------ Static 
+MyInbox(25) --- Partial linktext and webelement value keeps changing
+
+//*[contains(text(),'National')]
+
+
+---------------------------------------------------------------------------------------------------
+Following:
+
+<input name="txtPassword" id="txtPassword" autocomplete="off" type="password"> -- Current WebElement
+
+//input[@name="txtPassword"]//following::span
+
+
+-----------------------------------------------------------------------------------------------------
+Ancestor:
+
+<input name="txtPassword" id="txtPassword" autocomplete="off" type="password">
+
+//input[@id="txtPassword"]//ancestor::input
+
+
+------------------------------------------------------------------------------------------------------------
+Preceding:
+
+<input type="submit" name="Submit" class="button" id="btnLogin" value="LOGIN">
+
+//input[@id="btnLogin"]//preceding::input
+
+
+-------------------------------------------------------------------------------------------------------------
+Child:
+<div id="divPassword" class="textInputContainer">
+
+//*[@id="divPassword"]//child::div
+
+
+-------------------------------------------------------------------------------------------------------------
+
+Parent:
+
+<input name="txtUsername" id="txtUsername" type="text">
+
+//input[@id="txtUsername"]//parent::div
+
+--------------------------------------------------------------------------------------------------------------
+
+
+Self:
+//*[@id='txtUsername']//self::input
+
+
+
+---------------------------------------------------------------------------------------------------------------
+
+Descendant:
+
+//div[@id="divUsername"]//descendant::div
+
+
+--------------------------------------------------------------------------------------------------------------
+
+Starts-with:   When the Webelement value dynamically changes we can use starts-with
+
+//*[starts-with(text(),'Nationa')]
+
+
+---------------------------------------------------------------------------------------------------------------
+Following-sibling:
+
+//*[@id='divUsername']//following-sibling::div
+
+
+
+
+
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+

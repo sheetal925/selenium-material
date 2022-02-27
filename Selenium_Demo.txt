@@ -1,0 +1,120 @@
+
+1. Sudharani (My sister) / Dharmaja (My wife) --- 8500125786 / 9381196841)
+2. Sudhakar --- 9294052778
+
+ICICI Bank client
+
+
+BA Team - Requirements collection
+Design Team -preparation HLD , LLD documents
+Development Team - Build / Software
+Testing Team: SIT + FAT , UAT Testing Team
+
+Testing Team - ( Manual Testing Team / Automation Testing Team)
+1. To Prove that the system is working fine as per the client requirements
+2. Sign off & Certify ---> production
+4. Requirements --> We will write the test cases
+3. Identifying the issues/defects in the system & log those issues in the System
+
+
+
+ICICI Bank client : Second address New Enhancemenets (Changes)
+
+The Purpose of Testing :  System Testing
+New Requirements / New Functionaliy Testing --> 100 Test Cases  ( Progression Testing) 
+Existing Functionality Requirements --> 800 Test cases ( Regression Testing )
+
+
+Manual Testing : 100 + 800 ----> 10 days + 50 days ----> 60 days
+
+Automation Testing : 100 + 800 ----> 10 days + 5 days ----> 15 days
+
+
+--------------------------------------------------------------------------
+
+
+Selenium - Java,Python, Ruby , Java Script,C#
+
+Selenium Java --> 90 % runining Projects
+
+Automation Tools ----------TOSCA , UFT , SELENIUM ........
+
+
+Importance of Selenium :
+
+1. Open source software to automation any of the web application
+2 . Browser compatability Testing
+3. Selenium grid
+4. Excel , Notepad , CSV files, JSON, XML data - Test Data--External System easily
+5. Parallal Testing
+----------------------------------------------------------
+
+Selenium Java - 45 labs  - 5 weeks 
+2 Live Projects 
+1.  Cucumber Framework Project -  40 %
+2.  Hybrid framework - 60 %
+
+------------------------------------------------
+
+I3 , I5 - 64 bit Operating - windows7 / windows 10, Ram - 4gb
+
+----------------------------------------------------------------------------------------------------------------
+
+
+Day2:
+
+Selenium Installation: 4 softwares required
+1) Eclipse  ----  Its an editor where we will write selenium programs (Launch Chromebrowser etc)
+2) Java, TestNG  ---- Softwares that needs to be downloaded 
+3) Webdriver  ------ EXE file (Mediator or interface)
+4) Browsers ---- Chrome, IE, Firefox, Edge
+
+These are opensource
+
+
+Eclipse ---> Selenium Program --> Webdriver.exe ---> Chromebrowser
+
+https://drive.google.com/file/d/1u7EXWwNq_4oZognBM7I54Mv2kLCXcp5b/view?usp=sharing
+https://drive.google.com/file/d/1fHL-73tdgDwhf-gaygf63DeWwiZAKFhv/view?usp=sharing
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+Highlighting WebElement Borders
+
+Static and Non Static Methods
+
+1.Static methods
+2.Non static methods
+3.Non static methods with parameters
+4.Static methods with parameters
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

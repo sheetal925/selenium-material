@@ -1,0 +1,575 @@
+			Selenium Testing
+
+
+1.Testin definition
+
+	<Testing is to prove wether the software is correctly working 
+
+	 fine as per client requirements
+
+--------------------------------------------------------------------------
+
+
+2.Types of testing available in testing
+
+	1.Manual testing
+
+	2.Automation testing
+
+-------------------------------------------------------------------------
+
+3.To test any of the sofware we must do two types of testing 
+
+	1.Progression testing
+
+	2.Regretion Testing
+
+-------------------------------------------------------------------------
+
+4.what is meant by  Regression Testing
+
+	>Re-executing of all existing test cases
+
+-------------------------------------------------------------------------
+
+5.what is meant by Progression Testing
+
+	>Testing the new features or new functional Requirements.
+
+why we will do Regression testing
+
+	<New code should not impact on existing functions.
+
+-------------------------------------------------------------------------
+6.what is importance of Selenium
+ 
+	>Selenium is a open Source Software to Automate any of the 
+
+	 web applications.
+
+	>Browser Compatibility testing.(we can execute the same 
+
+	 program in multiple Browser combinations).
+
+	<Parllel testing (we can execute functional flows parlally
+ 
+	 in different tabs/secessions).
+
+	<Selenium Grid (we can distribute the test execution amoung
+ 
+	 multiple systems).
+
+-------------------------------------------------------------------------
+
+
+7.Even browser compatibility testing we can do in Tosca and UST as well
+ 
+  why i can prefer only selenium
+
+	<we have to write the specific program every browser specific
+
+	 so for the same program we have to write three different
+
+	 program 1. cHhrome browser, firefox browserspecific, & 
+
+	 I.E browser specific
+
+	< where as in selenium just i have to change just one line of 
+
+	  code on which browser it has to exicute.	 
+-------------------------------------------------------------------------
+
+7.How to Lunch the browser in Selenium application.
+	
+	<System.setproperty(webdriver.chrome.driver) and i have to 
+
+	 specify chromedriver.exe path and 
+	 
+	 driver=new chrome driver> so that my web window will be launched.
+
+-------------------------------------------------------------------------
+8. How to maxmise the window.
+
+	<Driver.manage.window.maxmise();
+
+-------------------------------------------------------------------------
+
+9.How to write a web Element.
+
+	<Driver.get(URL). 
+
+-------------------------------------------------------------------------
+
+10.What are the operations we must perform on a web element.
+
+	<.send keys (if it is a text field we will write the 
+	  input values in the .send keys)
+
+	<click 
+
+-------------------------------------------------------------------------
+
+11.How the web driver artcitecture it will work.
+
+	<we will write a set of driver instructions in selenum program  and
+	
+	<every request it will go to web driver.exe and 
+
+	<that web driver.exe will pass every request to
+ 
+	 chrome broser.
+
+
+-------------------------------------------------------------------------
+
+12.How to call non static methord in a main test
+
+	<We have to create an object for the current class by 
+	 using new key word we have to create the object 
+
+		(object.methord name).
+
+
+-------------------------------------------------------------------------
+
+13.How to call Static methods.
+
+	<using class name.methord name>
+
+-------------------------------------------------------------------------
+
+14.On the web page what ever i am seeing what is the terminology we are calling- 
+	
+		<web element
+
+-------------------------------------------------------------------------
+
+15.So for every web elements developer will give some things what are those
+
+	<id (drier.findelement/id)
+	
+	<name (	driver.findelement/name)
+
+
+-------------------------------------------------------------------------
+
+16.How to write method syntax
+
+	<public void method name throwsexcemption{} 
+				(curling bracket start and end) 
+
+-------------------------------------------------------------------------
+
+
+17.In real time people will write non static methords with parameterisation.
+
+		
+
+	<first you need to declare globale variables.
+	
+	< We have to pass those global variables to main test.
+
+	<in the methord level we have to create the local variable.
+
+	< And we have replace the value with to local variables.
+
+-------------------------------------------------------------------------
+
+
+18.What are Different types of locators available web element,
+
+
+	1.ID (Find Element By ID)
+
+	2.Name (Find Element By Name)
+
+	3.Css Selector
+
+	4.Xpath (Find Element By Xpath)
+
+	5.linktext (if Hyper link is Static Then we use Linktext)
+
+	6.Partial Linktext (if Hyper link is Dynamic Then we use PartialLinktext)
+
+	7.Class Name
+
+	8.Tag Name
+
+
+-------------------------------------------------------------------------
+
+
+19.I want to  know how many hyper links are there on a web page?
+
+	<List(web elements)links = driver.findElements(By.Tagname();
+
+	<And i have to specify Tag Name.
+
+	<So when ever i found a group of similar web Elements then we will write 
+
+		driver.find Elements
+	
+	<Driver.find Elements means i am finding more than one web element having a tag name
+	  
+	 stats with <a>.
+
+	<so that we can find out how many hyperlinks are there.
+	
+	< to find out no of hyper links I have to write 
+
+		Link.Size();
+
+	< It will give the Count & i am printing that one into the console
+
+-------------------------------------------------------------------------
+
+
+20 To Install selenium what are the softwares we required.
+
+
+
+	< Eclipse-It is an editor where we write selenium program.
+
+	< TestNG,Java-These are the supporting Libraries to be installed in system
+
+	< WebDriver.exe file
+
+	< Browsers-Chrome,firefox,IE
+
+
+-------------------------------------------------------------------------
+
+
+21.What are the dependencies required in any Project.
+
+	< TestNG------TestNG Supporting Library
+
+	< Java------TestNG Supporting Library
+
+	< Mavan------Selenium Supporting Library
+
+-------------------------------------------------------------------------
+
+
+22.How can we handle a Dropdown in selenium 
+
+	< To handle a dropdown selenium has given two types of code
+
+	< Selectdropdown= new select(driver.findelement(By.Id())
+
+   step-1:
+
+	we have to import select class
+
+	we have to create an object for a select class.
+
+	<dropdown is handled in three ways
+
+	1.dropdown.SelectbyVisibletext();
+
+	2.dropdown.selectbyValue();
+
+	3.dropdown.selectbyindex();
+
+
+-------------------------------------------------------------------------
+
+23.SelectbyVisibletext: if we want to select dropdown based on visible text then 
+
+			i will write select by visible text.
+
+  selectbyValue: if we want to select dropdown based on Value then i will write selectbyValue.
+	
+
+-------------------------------------------------------------------------
+
+24.DataProvider:
+
+	<if you want to execute a program mutiple times for different sets of input data we can
+
+	 use data provider.
+
+   steps:
+
+	<we have to copy dataprovider syntax and ready with my test Data.
+
+	<connect with dataprovider.
+
+	<we have to specify all global variables at method level.
+
+
+-------------------------------------------------------------------------
+
+25.How to create an object array
+
+	<objectarraydata= new objectarray(no of rows by no of columns)
+
+	Data [0][0];
+
+	Data [0][1];
+
+
+	Data [1][0];
+
+	Data [1][1];
+
+	we have to return data.
+
+
+-------------------------------------------------------------------------
+
+26.Data Driven Test:
+
+	<we have to fetch input data from Excel.
+
+	<and we load object in dataprovider object array.
+
+	<and your test is executing multiple times.
+
+-------------------------------------------------------------------------
+
+27.To fetch input data from Excel we have to import
+
+
+	<Import.ExcelApitest4 class;
+
+-------------------------------------------------------------------------
+
+28.Browser compatibility testing:
+
+    Step:1
+
+	<in Excel level we have to add one more parameter as Browser.
+
+	< specify browsers(chrome,firefox)
+	
+    Step:2
+
+	<we have to modify browser parameter at method level as "String Browser".
+
+    Step:3
+
+	<Now we have to write the condition based on brower parameters
+
+		if (driver.equalsIgnoreCase(chrome));then we will write 
+
+		driver=TestBrowser.openchromebrowser();
+
+
+		incase browser value is firefox then we will use 
+
+		if (driver.equalsIgnoreCase(firefox));then we will write 
+
+		driver=TestBrowser.openfirefox();
+
+
+-------------------------------------------------------------------------
+
+29.How to launch a firefox Browser
+
+	< System.setproperty(webdriver.gecko.driver)
+
+	<specify gecko driver path.
+
+-------------------------------------------------------------------------
+
+30.Emailable Reports
+
+
+	<i have to write a set of driver instructions 
+
+	<by following set of driver insruction i am writeing a line (Reporter.log).
+
+	< what ever message i can write it will generated in the Emailable html report.
+
+	<TestNG has Provided a class name as reporter
+
+	<that is a pre defined class in testNG
+
+	<After that for the test class i have to generate TestNG.xml
+
+-------------------------------------------------------------------------
+
+31.How to create testNG.xml File
+
+	< Right Click on TestNG Class
+
+	< Select TestNG
+	
+	< Convert TestNG
+
+	<Brouse to specified folder
+
+	< and Save.
+
+-------------------------------------------------------------------------	
+
+32.What is a purpose of TestNG Xml.
+
+	<when ever we execute the program to TestNG xml only emailable report is Generated.
+
+
+-------------------------------------------------------------------------
+
+
+33.What are the Annotation tags You know in testing
+
+
+	
+	1.@ Before Test.
+
+	2.@ Test.
+
+	3.@ After Test.
+
+	4.@ Dataprovider.
+
+	
+    1. @ Before Test: we will write launch browser instructions in @ Before Test
+
+    2. @ Test : the main text like Login, add nationalities,skills etc.,all methods we will 
+
+                Develop in @ Test.
+
+    3. @After Test: we wil write chlose browser 
+
+			driver.close();
+
+
+	<so what ever code we write in @ Before Test & @ After Test it will not shown in
+
+	 emailable reports
+
+	<so the log statement  what ever  we write in @ Test will shown in
+
+	 emailable reports
+
+
+-------------------------------------------------------------------------
+
+34.Frames: How many ways we can handle a frame
+
+
+	< we can handle frames in three ways 
+
+	1.Switch into frames by iframe Name.
+
+		driver.switchto frames(frameName);
+
+	2.Switch into Frames by web element reference.
+
+		driver.switchto frames(driver.findElement(By.Id()));
+
+	3.Switch into Frames by index 
+
+		list (web Element) Frames = driver.find element(By(TagName(iframe));
+
+		driver.Switchto frame(frame.get(0));
+
+		driver.Switchto frame(frame.get(1));
+
+	
+-------------------------------------------------------------------------		
+		
+35. Waits.
+
+In Selenium there are three types of waits
+
+	1.Implicit wait.
+
+		<The driver will wait as per implicit time specified
+		
+		< in case of any web element is not loading the driver will wait as per
+
+		  implicit time specified
+
+		< tis will applicable for any type of web elements.
+
+
+			---- (driver.manage.timeout.implicit time(10, timeunit.sec);
+
+
+	2.Explicit wait.
+
+		< if any of the web element is loading more than (10 sec) i.e., web element
+
+		  is crossing more than its default implicit time
+
+		< Then we will give extra time for a specific web element.
+
+		
+		--------- Webelement wait   wait= new webdriver wait (driver,60);
+		
+		---------wait until(expected conditions visibility of element located by id);
+
+	3.fluient wait.
+
+		<Driver is performing more search operations on a perticular web element.
+
+
+
+-------------------------------------------------------------------------		
+
+36.How can we handle Syncronization in selenium
+
+
+	< we can handle syncronization by using three types of waits in selenium
+
+		1.implicit wait
+
+		2.explicit wait
+
+		3.fluient wait
+
+
+	< Driver will wait as per implicit time specified & it handled Automatically.
+
+	< when ever the web element is loading more than defauly implicit time & we can 
+
+	  handle it specialy by using eaither excplicit or fluent wait.
+
+-------------------------------------------------------------------------		
+
+
+37.What is meant by Syncronization.
+
+		<the driver has to wait untill the web element is displayed after that only
+
+		 we can perform click operations.
+
+
+
+-------------------------------------------------------------------------		
+
+38.How do you implement Browser comparatibility Testing feature?
+
+
+		< In TestNG.Xml I will write TestNG Parameter.
+
+		<Like Parameter Name = Browser & value = firefox
+
+		<In my TestNG Class i can write @parameter before @ before test.
+
+		< & i can specify the parameter name whwt ever i given
+
+		< so that parameter name will automitically passed to my local variable @ methord level 
+
+		<Now we have to write the condition based on brower parameters
+
+			if (driver.equalsIgnoreCase(chrome));then we will write 
+
+			driver=TestBrowser.openchromebrowser();
+
+
+		incase browser value is firefox then we will use 
+
+			if (driver.equalsIgnoreCase(firefox));then we will write 
+
+			driver=TestBrowser.openfirefox();
+
+
+-------------------------------------------------------------------------		
+
+
+
+

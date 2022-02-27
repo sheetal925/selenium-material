@@ -1,0 +1,119 @@
+Git push commands:
+
+1) Open Git Bash
+2) pwd --- to check present working directory
+3) mkdir folder name --- to make a folder
+4) chaange the directory to the folder that u have created
+5) git init -- to initialize the folder
+6) git pull https://github.com/Venky7032/Java-Abstractions
+7) git status -- to check the status
+8) git add . -- to add the files
+9) git commit -m "comments"
+10) git branch -m main --- to change the branch
+11) git remote add origin https://github.com/Venky7032/Java-Abstractions
+12) git push -u origin main
+
+
+
+
+
+
+
+USER@DESKTOP-BDCU2EV MINGW64 ~
+$ pwd
+/c/Users/USER
+
+USER@DESKTOP-BDCU2EV MINGW64 ~
+$ mkdir git.demo
+
+USER@DESKTOP-BDCU2EV MINGW64 ~
+$ cd /c/Users/USER/git.demo
+
+USER@DESKTOP-BDCU2EV MINGW64 ~/git.demo
+$ pwd
+/c/Users/USER/git.demo
+
+USER@DESKTOP-BDCU2EV MINGW64 ~/git.demo
+$ git pull https://github.com/Venky7032/Java-Abstractions
+fatal: not a git repository (or any of the parent directories): .git
+
+USER@DESKTOP-BDCU2EV MINGW64 ~/git.demo
+$ git init
+Initialized empty Git repository in C:/Users/USER/git.demo/.git/
+
+USER@DESKTOP-BDCU2EV MINGW64 ~/git.demo (master)
+$ git pull https://github.com/Venky7032/Java-Abstractions
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 6 (delta 2), reused 6 (delta 2), pack-reused 0
+Unpacking objects: 100% (6/6), 807 bytes | 23.00 KiB/s, done.
+From https://github.com/Venky7032/Java-Abstractions
+ * branch            HEAD       -> FETCH_HEAD
+
+USER@DESKTOP-BDCU2EV MINGW64 ~/git.demo (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+USER@DESKTOP-BDCU2EV MINGW64 ~/git.demo (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+USER@DESKTOP-BDCU2EV MINGW64 ~/git.demo (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Test3.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        sdfgdfgdf.xlsx
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+USER@DESKTOP-BDCU2EV MINGW64 ~/git.demo (master)
+$ git add .
+
+USER@DESKTOP-BDCU2EV MINGW64 ~/git.demo (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Test3.java
+        new file:   sdfgdfgdf.xlsx
+
+
+USER@DESKTOP-BDCU2EV MINGW64 ~/git.demo (master)
+$ git commit -m "modifications"
+[master 7b4539d] modifications
+ 2 files changed, 3 insertions(+)
+ create mode 100644 sdfgdfgdf.xlsx
+
+USER@DESKTOP-BDCU2EV MINGW64 ~/git.demo (master)
+$ git branch -m main
+
+USER@DESKTOP-BDCU2EV MINGW64 ~/git.demo (main)
+$ git remote add origin https://github.com/Venky7032/Java-Abstractions
+
+USER@DESKTOP-BDCU2EV MINGW64 ~/git.demo (main)
+$ git push -u origin main
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 5.93 KiB | 5.93 MiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Venky7032/Java-Abstractions
+   2bd6163..7b4539d  main -> main
+branch 'main' set up to track 'origin/main'.
+
+USER@DESKTOP-BDCU2EV MINGW64 ~/git.demo (main)
+$
+
+
+

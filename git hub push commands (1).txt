@@ -1,0 +1,157 @@
+
+GitHub push the code from local to main repository:
+
+1) git init --- To initialize the folder
+2) git status --- To check the status
+3) git add . --- to add all the files / git add file name ---- to add a specific file
+4) git commit -m "Comments" --- To commit the projects 
+5) git branch -m main --- to change the branch from master to main
+6) git remote add origin https://github.com/Venky7032/OrangeHRM12
+7) git push -u origin main --- to push the code
+
+
+USER@DESKTOP-BDCU2EV MINGW64 ~/Desktop/Collections
+$ pwd
+/c/Users/USER/Desktop/Collections
+
+USER@DESKTOP-BDCU2EV MINGW64 ~/Desktop/Collections
+$ git init
+Initialized empty Git repository in C:/Users/USER/Desktop/Collections/.git/
+
+USER@DESKTOP-BDCU2EV MINGW64 ~/Desktop/Collections (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Java.txt
+        TC01_Hashset.java
+        TC02_TreeSet.java
+        TC03_LinkedHashSet.java
+        TC04_ArrayList.java
+        TC05_LinkedList.java
+        TC06_Vector.java
+        TC07_Stack.java
+        TC08_HashMap1.java
+        TC08_LinkedHashMap.java
+        TC08_TreeMap.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+USER@DESKTOP-BDCU2EV MINGW64 ~/Desktop/Collections (master)
+$ git add Java
+fatal: pathspec 'Java' did not match any files
+
+USER@DESKTOP-BDCU2EV MINGW64 ~/Desktop/Collections (master)
+$ git add Java.txt
+
+USER@DESKTOP-BDCU2EV MINGW64 ~/Desktop/Collections (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Java.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        TC01_Hashset.java
+        TC02_TreeSet.java
+        TC03_LinkedHashSet.java
+        TC04_ArrayList.java
+        TC05_LinkedList.java
+        TC06_Vector.java
+        TC07_Stack.java
+        TC08_HashMap1.java
+        TC08_LinkedHashMap.java
+        TC08_TreeMap.java
+
+
+USER@DESKTOP-BDCU2EV MINGW64 ~/Desktop/Collections (master)
+$ git add .
+
+USER@DESKTOP-BDCU2EV MINGW64 ~/Desktop/Collections (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Java.txt
+        new file:   TC01_Hashset.java
+        new file:   TC02_TreeSet.java
+        new file:   TC03_LinkedHashSet.java
+        new file:   TC04_ArrayList.java
+        new file:   TC05_LinkedList.java
+        new file:   TC06_Vector.java
+        new file:   TC07_Stack.java
+        new file:   TC08_HashMap1.java
+        new file:   TC08_LinkedHashMap.java
+        new file:   TC08_TreeMap.java
+
+
+USER@DESKTOP-BDCU2EV MINGW64 ~/Desktop/Collections (master)
+$ git commit -m "First Comment"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'USER@DESKTOP-BDCU2EV.(none)')
+
+USER@DESKTOP-BDCU2EV MINGW64 ~/Desktop/Collections (master)
+$ git config --global user.email "venky703236@gmail.com"
+
+USER@DESKTOP-BDCU2EV MINGW64 ~/Desktop/Collections (master)
+$ git config --global user.name "Venky7032"
+
+USER@DESKTOP-BDCU2EV MINGW64 ~/Desktop/Collections (master)
+$ git commit -m "First Comment"
+[master (root-commit) 020bfb2] First Comment
+ 11 files changed, 545 insertions(+)
+ create mode 100644 Java.txt
+ create mode 100644 TC01_Hashset.java
+ create mode 100644 TC02_TreeSet.java
+ create mode 100644 TC03_LinkedHashSet.java
+ create mode 100644 TC04_ArrayList.java
+ create mode 100644 TC05_LinkedList.java
+ create mode 100644 TC06_Vector.java
+ create mode 100644 TC07_Stack.java
+ create mode 100644 TC08_HashMap1.java
+ create mode 100644 TC08_LinkedHashMap.java
+ create mode 100644 TC08_TreeMap.java
+
+USER@DESKTOP-BDCU2EV MINGW64 ~/Desktop/Collections (master)
+$ git branch -m main
+
+USER@DESKTOP-BDCU2EV MINGW64 ~/Desktop/Collections (main)
+$ git remote add origin https://github.com/Venky7032/OrangeHRM12.git
+
+USER@DESKTOP-BDCU2EV MINGW64 ~/Desktop/Collections (main)
+$ git push -u origin main
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (13/13), done.
+Writing objects: 100% (13/13), 2.57 KiB | 1.29 MiB/s, done.
+Total 13 (delta 8), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (8/8), done.
+To https://github.com/Venky7032/OrangeHRM12.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+USER@DESKTOP-BDCU2EV MINGW64 ~/Desktop/Collections (main)
+$
+
